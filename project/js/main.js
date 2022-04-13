@@ -26,6 +26,9 @@ class ProductList {
             this.container.insertAdjacentHTML('beforeend', productObject.getHTMLString());
         }
     }
+    sum() { 
+        return this._goods.reduce((sum, good) => sum + good.price, 0);
+    };
 }
 
 class ProductItem {
